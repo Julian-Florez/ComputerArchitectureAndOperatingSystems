@@ -1,12 +1,15 @@
 import subprocess
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
-# Run runner.py
-subprocess.run(['python', 'runner.py'])
-
-# Run runner.exe
-subprocess.run(['runner.exe'])
+# Check the operating system and run the necessary files
+if os.name == 'nt':  # Windows
+    subprocess.run(['python', 'runner.py'])
+    subprocess.run(['runner.exe'])
+else:  # Linux or other Unix-like systems
+    subprocess.run(['python3', 'runner.py'])
+    subprocess.run(['/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/CIntro/runner'])
 
 # Write to time.txt
 with open('time.txt', 'r+') as file:
