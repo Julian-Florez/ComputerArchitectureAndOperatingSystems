@@ -7,7 +7,6 @@
 int directoryHandling(char *path, char *operation) {
     char cwd[1024];
     
-    // Get and display the current working directory
     if (getcwd(cwd, sizeof(cwd)) != NULL) {
         printf("Current working directory: %s\n", cwd);
     } else {
@@ -16,7 +15,7 @@ int directoryHandling(char *path, char *operation) {
     }
 
     if(operation == "create"){
-        // Create a new directory
+
         if (mkdir(path, 0755) == 0) {
             printf("Directory '%s' created successfully.\n", path);
         } else {
@@ -24,7 +23,7 @@ int directoryHandling(char *path, char *operation) {
             return 1;
         }
     }else if(operation == "remove"){
-        // Remove the created directory
+        
         if (rmdir(path) == 0) {
             printf("Directory '%s' removed successfully.\n", path);
         } else {
@@ -39,8 +38,8 @@ int directoryHandling(char *path, char *operation) {
 }
 
 int main() {
-    directoryHandling("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/testDir", "create");
-    directoryHandling("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/testDir2", "create");
-    directoryHandling("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/testDir2", "remove");
+    directoryHandling("./outFiles/testDir", "create");
+    directoryHandling("./outFiles/testDir2", "create");
+    directoryHandling("./outFiles/testDir2", "remove");
     return 0;
 }

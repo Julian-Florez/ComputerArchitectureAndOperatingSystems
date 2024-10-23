@@ -23,6 +23,6 @@ void readFile(char *filepath)
 
 int main()
 {
-    readFile("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/test.txt");
+    readFile("./outFiles/test.txt");
     return 0;
 }

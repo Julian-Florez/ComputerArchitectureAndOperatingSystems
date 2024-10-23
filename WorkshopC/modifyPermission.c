@@ -12,6 +12,6 @@ void modifyPermission(char *file, char *permissions){
 
 
 int main(){
-    modifyPermission("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/example4.txt", "RW");
+    modifyPermission("./outFiles/example4.txt", "RW");
     return 0;
 }

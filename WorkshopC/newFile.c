@@ -25,6 +25,6 @@ void newFile(char *path, char *name, char *content){
 }
 
 int main(){
-    newFile("/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopC/outFiles/", "test.txt", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis ex");
+    newFile("./outFiles/", "test.txt", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis ex");
     return 0;
 }
