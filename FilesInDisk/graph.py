@@ -21,4 +21,5 @@ plt.xlabel('Número')
 plt.ylabel('Frecuencia')
 
 # Mostrar la gráfica
+plt.savefig("sizes.png")
 plt.show()
