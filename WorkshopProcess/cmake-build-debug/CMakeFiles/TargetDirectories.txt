@@ -1,0 +1,3 @@
+/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopProcess/cmake-build-debug/CMakeFiles/WorkshopProcess.dir
+/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopProcess/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julian-florez/Documentos/ComputerArchitectureAndOperatingSystems/WorkshopProcess/cmake-build-debug/CMakeFiles/rebuild_cache.dir
